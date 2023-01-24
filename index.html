@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <title>Bootstrap darslari</title>
+
+  <!-- style -->
+  <style>
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="h4">Billing adress</div>
+    <form class="row g-3 needs-validation" novalidate>
+
+      <div class="col-md-6 mb-3">
+        <label class="form-label" for="first-name">First name</label>
+        <input type="text" class="form-control" id="first-name" required>
+        <div class="invalid-feedback">
+          Valid first name is required!
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label class="form-label" for="last-name" >Last name</label>
+        <input type="text" class="form-control" id="last-name" required>
+        <div class="invalid-feedback">
+          Valid last name is required!
+        </div>
+      </div>
+
+      <label class="form-label" for="user-name">Username</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" id="user-name" placeholder="Username" required>
+        <div class="invalid-feedback">
+          Valid username is required!
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="e-mail">Email <span class="form-text">(Optional)</span></label>
+        <input class="form-control" type="email" id="e-mail" placeholder="you@example.com">
+        <div class="valid-feedback">
+          Valid email is required!
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="address">Address</label>
+        <input class="form-control" type="text" id="address" placeholder="1234 Main St" required>
+        <div class="invalid-feedback">
+          Valid address is required!
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="address">Address 2 <span class="form-text">(Optional)</span></label>
+        <input class="form-control" type="text" id="address" placeholder="Apartment or suite">
+        <div class="valid-feedback">
+          Please enter your shipping address!
+        </div>
+      </div>
+
+      <div class="col-md-5 mb-3">
+        <label class="form-label" for="country">Country</label>
+        <select class="form-select" name="country-name" id="country" required>
+          <option selected disabled value=""></option>
+          <option value="1">...</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid country!
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <label class="form-label" for="state">State</label>
+        <select class="form-select" name="state" id="state" required>
+          <option selected disabled value="">Choose...</option>
+          <option value="1">...</option>
+        </select>
+        <div class="invalid-feedback">
+          Please provide a valid state!
+        </div>
+      </div>
+
+      <div class="mb-3 col-md-3">
+        <label class="form-label" for="zip">Zip</label>
+        <input class="form-control" type="text" id="zip" required>
+        <div class="invalid-feedback">
+          Zip code required!
+        </div>
+      </div>
+
+      <hr>
+      <div class="mb-3">
+        <div>
+          <input type="checkbox" class="form-check-input" id="check-box1">
+        <label for="check-box1" class="form-check-label">Shipping address is the same as my billing address</label>
+        </div>
+        <div>
+          <input type="checkbox" class="form-check-input" id="check-box2">
+        <label for="check-box2" class="form-check-label">Save this information for next time</label>
+        </div>
+      </div>
+      <hr>
+
+      <span class="h4">Payment</span>
+      <div class="mb-3">
+        <div>
+          <input class="form-check-input" type="radio" id="pay-ment1" name="payment">
+          <label class="form-check-label" for="pay-ment1">Credit card</label>
+        </div>
+        <div>
+          <input class="form-check-input" type="radio" id="pay-ment2" name="payment">
+          <label class="form-check-label" for="pay-ment2">Debit card</label>
+        </div>
+        <div>
+          <input class="form-check-input" type="radio" id="pay-ment3" name="payment">
+          <label class="form-check-label" for="pay-ment3">PayPal</label>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label class="form-label" for="on-card">Name on card</label>
+        <input class="form-control" type="text" id="on-card" required>
+        <div class="form-text">
+          Full name as displayed on card
+        </div>
+        <div class="invalid-feedback">
+          Name on card is required!
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label class="form-label" for="number-card">Credit card number</label>
+        <input class="form-control" type="text" id="number-card" required>
+        <div class="invalid-feedback">
+          Credit card number is required!
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <label class="form-label" for="expiration">Expiration</label>
+        <input class="form-control" type="text" id="expiration" required>
+        <div class="invalid-feedback">
+          Expiration date is required!
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label class="form-label" for="cvv">CVV</label>
+        <input class="form-control" type="text" id="cvv" required>
+        <div class="invalid-feedback">
+          Security code is required!
+        </div>
+      </div>
+      <hr>
+
+      <div>
+        <button class="btn btn-primary" type="submit" style="width: 100%;">Continue to chechout</button>
+      </div>
+
+    </form>
+  </div>
+
+
+
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+  <!-- Bootstrap js -->
+  <link rel="stylesheet" href="./bootstrap/js/bootstrap.bundle.min.js">
+
+</body>
+</html>
